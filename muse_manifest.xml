@@ -1,0 +1,964 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://alpinebethel.org" resolutions="1x" timestamp="1529252304008">
+  <folder name="css">
+    <file name="site_global.css" crc="4018332164"/>
+    <file name="master_red.css" crc="193706446" ref="thanksgiving:vbs:wednesday-services:bgmc:event-gallery:life-group-sign-up:sunday-services:elvanto-thank-you:index:i-will-praise-his-name:missions:oasis:giving:men-s-ministries:contact:i-heart-alpine:iwphn--compassion:about:rooted:women-s-ministries:day-of-thanks:life-groups:i-will-praise-his-name---presence:youth-ministries:kids-volunteer:events:ministries:children-s-ministries:craft-fair:fall-festival:thank-you"/>
+    <file name="thanksgiving.css" crc="470820821" ref="thanksgiving"/>
+    <file name="vbs.css" crc="3781672094" ref="vbs"/>
+    <file name="wednesday-services.css" crc="4216440783" ref="wednesday-services"/>
+    <file name="bgmc.css" crc="471306915" ref="bgmc"/>
+    <file name="event-gallery.css" crc="3962511846" ref="event-gallery"/>
+    <file name="life-group-sign-up.css" crc="276630077" ref="life-group-sign-up"/>
+    <file name="sunday-services.css" crc="534435565" ref="sunday-services"/>
+    <file name="elvanto-thank-you.css" crc="3856819050" ref="elvanto-thank-you"/>
+    <file name="index.css" crc="40504929" ref="index"/>
+    <file name="i-will-praise-his-name.css" crc="31867741" ref="i-will-praise-his-name"/>
+    <file name="missions.css" crc="3799474182" ref="missions"/>
+    <file name="oasis.css" crc="4135893421" ref="oasis"/>
+    <file name="giving.css" crc="3808404295" ref="giving"/>
+    <file name="men-s-ministries.css" crc="536404856" ref="men-s-ministries"/>
+    <file name="contact.css" crc="446853230" ref="contact"/>
+    <file name="i-heart-alpine.css" crc="221713803" ref="i-heart-alpine"/>
+    <file name="iwphn--compassion.css" crc="4237457402" ref="iwphn--compassion"/>
+    <file name="about.css" crc="188393519" ref="about"/>
+    <file name="rooted.css" crc="445497496" ref="rooted"/>
+    <file name="women-s-ministries.css" crc="3845031157" ref="women-s-ministries"/>
+    <file name="day-of-thanks.css" crc="3975905889" ref="day-of-thanks"/>
+    <file name="life-groups.css" crc="4117352098" ref="life-groups"/>
+    <file name="i-will-praise-his-name---presence.css" crc="271307829" ref="i-will-praise-his-name---presence"/>
+    <file name="youth-ministries.css" crc="356000139" ref="youth-ministries"/>
+    <file name="kids-volunteer.css" crc="4206209721" ref="kids-volunteer"/>
+    <file name="events.css" crc="3874243166" ref="events"/>
+    <file name="ministries.css" crc="283676116" ref="ministries"/>
+    <file name="children-s-ministries.css" crc="49446906" ref="children-s-ministries"/>
+    <file name="craft-fair.css" crc="3907721939" ref="craft-fair"/>
+    <file name="fall-festival.css" crc="3845981437" ref="fall-festival"/>
+    <file name="thank-you.css" crc="3869100194" ref="thank-you"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="museutils.js" crc="340535759" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="museconfig.js" crc="310584261" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="webpro.js" crc="4059564322" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:contact:giving:youth-ministries:kids-volunteer:craft-fair:life-group-sign-up:i-heart-alpine:fall-festival:day-of-thanks:thanksgiving:event-gallery"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:youth-ministries:i-heart-alpine:event-gallery"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:youth-ministries:i-heart-alpine:event-gallery"/>
+    <file name="touchswipe.js" crc="4075097462" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:youth-ministries:i-heart-alpine:event-gallery"/>
+    <file name="jquery.watch.js" crc="51536988" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="require.js" crc="7928878" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="phone>about:phone>contact:index:about:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:craft-fair:life-groups:life-group-sign-up:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:missions:i-heart-alpine:fall-festival:bgmc:thanksgiving:event-gallery"/>
+    <file name="form_check.php" crc="4020933626" ref="phone>contact"/>
+    <file name="form_throttle.php" crc="4259590256" ref="phone>contact"/>
+    <file name="form_process.php" crc="37464564" ref="phone>contact"/>
+    <file name="form-u5771.php" crc="3971182981" ref="phone>contact"/>
+    <file name="jquery.musemenu.js" crc="510910590" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs"/>
+    <file name="form-u4936.php" crc="3933604630" ref="contact"/>
+    <file name="form-u6012.php" crc="3905262609" ref="giving"/>
+    <file name="form-u7256.php" crc="4041063486" ref="kids-volunteer"/>
+    <file name="form-u14807.php" crc="4249413564" ref="craft-fair"/>
+    <file name="form-u7551.php" crc="526166431" ref="life-group-sign-up"/>
+    <file name="form-u9509.php" crc="279832490" ref="fall-festival"/>
+    <file name="form-u21084.php" crc="3833635650" ref="day-of-thanks"/>
+    <file name="form-u10326.php" crc="243557685" ref="thanksgiving"/>
+  </folder>
+  <folder name="images">
+    <file name="grid_icon.png" crc="316319360" seo="true" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news">
+      <caption webpage="index" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="news" alt=""/>
+    </file>
+    <file name="home_icon.png" crc="3995069933" seo="true" ref="phone>index:phone>about:phone>services:phone>portfolio:phone>contact:phone>news:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="events" alt=""/>
+      <caption webpage="news" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="kids-volunteer" alt=""/>
+    </file>
+    <file name="slide1-crop-u5334.jpg" crc="4015169594" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="phone>index:index:youth-ministries:i-heart-alpine:event-gallery"/>
+    <file name="slide2-crop-u5340.jpg" crc="81343734" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide3-crop-u5338.jpg" crc="73694571" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="slide4-crop-u5336.jpg" crc="249559320" seo="true" ref="phone>index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="leftarrow.jpg" crc="381215849" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rightarrow.jpg" crc="234659963" ref="phone>index:index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="phone>index:index:youth-ministries:i-heart-alpine:event-gallery"/>
+    <file name="slider_shadow.png" crc="26595705" seo="true" ref="phone>index:phone>contact:index:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:craft-fair:life-groups:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:missions:i-heart-alpine:fall-festival:bgmc:men-s-ministries:day-of-thanks:thanksgiving:event-gallery:vbs">
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+    </file>
+    <file name="background.jpg" crc="281212163" ref="phone>index:phone>services:index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:craft-fair:life-groups:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:vbs">
+      <caption webpage="missions" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="events" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+    </file>
+    <file name="frame.png" crc="292045495" seo="true" ref="phone>index:phone>services:index:ministries:sunday-services:wednesday-services">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="mobile.png" crc="4270384495" seo="true" ref="phone>index:phone>services">
+      <caption webpage="index" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="fonts.png" crc="4253226282" seo="true" ref="phone>index:phone>services">
+      <caption webpage="index" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="customizable.png" crc="373997128" seo="true" ref="phone>index:phone>services">
+      <caption webpage="index" alt=""/>
+      <caption webpage="services" alt=""/>
+      <caption webpage="services" alt=""/>
+    </file>
+    <file name="pic1.jpg" crc="447789778" seo="true" ref="phone>index:phone>portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+    </file>
+    <file name="pic2.jpg" crc="4076030294" seo="true" ref="phone>index:phone>portfolio">
+      <caption webpage="index" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+    </file>
+    <file name="speechbubble.png" crc="404991352" seo="true" ref="phone>about:phone>news">
+      <caption webpage="about" alt=""/>
+      <caption webpage="news" alt=""/>
+      <caption webpage="news" alt=""/>
+    </file>
+    <file name="people1.jpg" crc="4201241640" seo="true" ref="phone>about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="people2.jpg" crc="4276018609" seo="true" ref="phone>about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="facebook-normal.jpg" crc="422069769" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="facebook-colour.jpg" crc="4254233042" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="twitter-normal.jpg" crc="4089598421" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="twitter-colour.jpg" crc="36681159" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="linkedin-normal.jpg" crc="307431302" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="linkedin-colour.jpg" crc="4114071253" ref="phone>about:phone>contact:index:about:youth-ministries">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="people3.jpg" crc="71087945" seo="true" ref="phone>about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="people4.jpg" crc="142555520" seo="true" ref="phone>about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="pic3.jpg" crc="3959055317" seo="true" ref="phone>portfolio">
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+    </file>
+    <file name="pic4.jpg" crc="16199319" seo="true" ref="phone>portfolio">
+      <caption webpage="portfolio" alt=""/>
+      <caption webpage="portfolio" alt=""/>
+    </file>
+    <file name="google--normal.jpg" crc="244101321" ref="phone>contact">
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="google--colour.jpg" crc="3804643727" ref="phone>contact">
+      <caption webpage="contact" alt=""/>
+    </file>
+    <file name="favicon.ico" crc="3872601208" ref="index"/>
+    <file name="about_icon.png" crc="3798618968" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="services_icon.png" crc="378524790" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="portfolio_icon.png" crc="121174711" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="donate.png" crc="3885341207" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="logo .png" crc="3946712288" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="contact icon.png" crc="313814171" seo="true" ref="index:events:ministries:about:contact:children-s-ministries:giving:youth-ministries:oasis:sunday-services:wednesday-services:kids-volunteer:craft-fair:life-groups:life-group-sign-up:thank-you:i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name:elvanto-thank-you:missions:i-heart-alpine:fall-festival:bgmc:women-s-ministries:men-s-ministries:day-of-thanks:thanksgiving:rooted:event-gallery:vbs">
+      <caption webpage="kids-volunteer" alt=""/>
+      <caption webpage="elvanto-thank-you" alt=""/>
+      <caption webpage="vbs" alt=""/>
+      <caption webpage="life-group-sign-up" alt=""/>
+      <caption webpage="event-gallery" alt=""/>
+      <caption webpage="fall-festival" alt=""/>
+      <caption webpage="women-s-ministries" alt=""/>
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="giving" alt=""/>
+      <caption webpage="thanksgiving" alt=""/>
+      <caption webpage="oasis" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+      <caption webpage="missions" alt=""/>
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="craft-fair" alt=""/>
+      <caption webpage="bgmc" alt=""/>
+      <caption webpage="day-of-thanks" alt=""/>
+      <caption webpage="about" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="thank-you" alt=""/>
+      <caption webpage="children-s-ministries" alt=""/>
+      <caption webpage="men-s-ministries" alt=""/>
+      <caption webpage="contact" alt=""/>
+      <caption webpage="rooted" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="events" alt=""/>
+    </file>
+    <file name="kingdom web.jpg" crc="421587997" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="goodfridayweb.jpg" crc="3860712209" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="easteregghuntweb.jpg" crc="435516352" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="easteratbethelweb.jpg" crc="4075728081" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="doitagain -18 theme.jpg" crc="3878425947" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="come.png" crc="292940211" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="connect.png" crc="3762536957" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="grow-icon.png" crc="16863084" seo="true" ref="index:ministries">
+      <caption webpage="index" alt=""/>
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="propelfebweb-crop-u24484.jpg" crc="420441796" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="text_arrow graphic.png" crc="4215947577" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="kids-icon1.png" crc="139244100" seo="true" ref="ministries:sunday-services">
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+    </file>
+    <file name="youth icon.png" crc="4181014444" seo="true" ref="ministries">
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="man icon.png" crc="284308859" seo="true" ref="ministries">
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="woman icon.png" crc="4022915263" seo="true" ref="ministries">
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="icon-heart grey.png" crc="137966234" seo="true" ref="ministries:i-heart-alpine">
+      <caption webpage="ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="missions icon.png" crc="459262011" seo="true" ref="ministries">
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="icon-heart.png" crc="3932726574" seo="true" ref="ministries">
+      <caption webpage="ministries" alt=""/>
+    </file>
+    <file name="6-crop-u4377.jpg" crc="4105250923" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="img_0006_september 20, 2015-crop-u4379.jpg" crc="529452611" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="20151006_093415-u4383.png" crc="180115120" ref="about"/>
+    <file name="james - heather-crop-u24096.jpg" crc="57507579" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="20180110_102611-crop-u24907.jpg" crc="4289503676" seo="true" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="kids min logo.png" crc="4171291879" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="michelle-crop-u6390.jpg" crc="479919240" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp1.jpg" crc="13597284" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp2.jpg" crc="198692778" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp3.jpg" crc="128781485" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp4.jpg" crc="338434165" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp6.jpg" crc="3910810170" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp7.jpg" crc="3793515498" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp8.jpg" crc="18568009" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp9.jpg" crc="152086064" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp5.jpg" crc="3991708595" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="rp10.jpg" crc="390340703" seo="true" ref="children-s-ministries">
+      <caption webpage="children-s-ministries" alt=""/>
+    </file>
+    <file name="tithes-offering-verse.jpg" crc="3847465740" ref="giving">
+      <caption webpage="giving" alt=""/>
+    </file>
+    <file name="graybtn.png" crc="423463211" ref="giving">
+      <caption webpage="giving" alt=""/>
+    </file>
+    <file name="youthlogo.jpg" crc="47509585" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="3-u6786-fr.png" crc="200138706" ref="youth-ministries:i-heart-alpine"/>
+    <file name="img_0838.jpg" crc="224218736" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="img_2678.jpg" crc="3958717752" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="img_2698.jpg" crc="4031577119" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="sushi.jpg" crc="3997043248" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="rain-1340354630bea.jpg" crc="3887640225" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="woods.jpg" crc="3909833187" seo="true" ref="youth-ministries:i-heart-alpine">
+      <caption webpage="youth-ministries" alt=""/>
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="button_left-u6785.png" crc="4015161479" ref="youth-ministries"/>
+    <file name="button_left-u6785-r.png" crc="4275686168" ref="youth-ministries"/>
+    <file name="button_right-u6812.png" crc="4019022584" ref="youth-ministries"/>
+    <file name="button_right-u6812-r.png" crc="35032102" ref="youth-ministries"/>
+    <file name="img_0838-crop-u6804.jpg" crc="4197846743" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="img_2678-crop-u6810.jpg" crc="241660366" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="img_2698-crop-u6800.jpg" crc="4258535699" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="sushi-crop-u6808.jpg" crc="107522540" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="rain-1340354630bea75x49.jpg" crc="4266300819" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="woods66x49.jpg" crc="407905252" seo="true" ref="youth-ministries">
+      <caption webpage="youth-ministries" alt=""/>
+    </file>
+    <file name="oasis_logo_black_large-u6636-fr.png" crc="128658216" ref="oasis"/>
+    <file name="lil-snappers-kids-group-two.png" crc="3845604200" ref="sunday-services">
+      <caption webpage="sunday-services" alt=""/>
+    </file>
+    <file name="baby.png" crc="3854103682" seo="true" ref="sunday-services:wednesday-services">
+      <caption webpage="wednesday-services" alt=""/>
+      <caption webpage="sunday-services" alt=""/>
+    </file>
+    <file name="wpid-madena_bk.jpg" crc="237041623" ref="wednesday-services">
+      <caption webpage="wednesday-services" alt=""/>
+    </file>
+    <file name="craft fair.jpg" crc="186227032" ref="craft-fair">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxunchecked.jpg" crc="495023700" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxuncheckedrollover.jpg" crc="4076496830" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxuncheckedmousedown.jpg" crc="361678653" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxchecked.jpg" crc="477278992" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxcheckedrollover.jpg" crc="435737969" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="checkboxcheckedmousedown.jpg" crc="4004261994" ref="craft-fair:life-group-sign-up:fall-festival:thanksgiving">
+      <caption webpage="craft-fair" alt=""/>
+    </file>
+    <file name="lifegrpsweb.jpg" crc="95321193" ref="life-groups">
+      <caption webpage="life-groups" alt=""/>
+    </file>
+    <file name="16909.png" crc="87668415" seo="true" ref="life-groups">
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+      <caption webpage="life-groups" alt=""/>
+    </file>
+    <file name="sb-podcast-page-banner.jpg" crc="4148603597" ref="i-will-praise-his-name---presence:iwphn--compassion:i-will-praise-his-name">
+      <caption webpage="iwphn--compassion" alt=""/>
+      <caption webpage="i-will-praise-his-name" alt=""/>
+      <caption webpage="i-will-praise-his-name---presence" alt=""/>
+    </file>
+    <file name="missional_church.jpg" crc="41479496" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="brandon - kendra kertson.jpg" crc="4187359371" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="contreras family.jpg" crc="4244725930" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="bohnertfinal1_compressed.jpg" crc="238728875" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="casual-diane - keith heermann.jpg" crc="18681185" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="frenn family.jpg" crc="4046077450" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="mike - dodey files 08.jpg" crc="351295213" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="edson family.jpg" crc="483806575" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="hudlow family.jpg" crc="4029568393" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="mike devito.jpg" crc="483009139" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="robert - celina bueno.jpg" crc="4134781301" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="juan gonzales.jpg" crc="48486948" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="rance_card_09.jpg" crc="373253151" seo="true" ref="missions">
+      <caption webpage="missions" alt=""/>
+    </file>
+    <file name="i heartn alpine.jpg" crc="241097775" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="2-crop-u9034.jpg" crc="474849670" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="youth convention 2015.png" crc="3764569820" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="button_left-u8996.png" crc="4015161479" ref="i-heart-alpine"/>
+    <file name="button_left-u8996-r.png" crc="4275686168" ref="i-heart-alpine"/>
+    <file name="button_right-u8985.png" crc="4019022584" ref="i-heart-alpine"/>
+    <file name="button_right-u8985-r.png" crc="35032102" ref="i-heart-alpine"/>
+    <file name="img_0838-crop-u9015.jpg" crc="4197846743" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="img_2678-crop-u9013.jpg" crc="241660366" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="img_2698-crop-u9017.jpg" crc="4258535699" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="sushi-crop-u9019.jpg" crc="107522540" seo="true" ref="i-heart-alpine">
+      <caption webpage="i-heart-alpine" alt=""/>
+    </file>
+    <file name="fall-festival_t.jpg" crc="4086630814" ref="fall-festival">
+      <caption webpage="fall-festival" alt=""/>
+    </file>
+    <file name="bgmc.jpg" crc="7076173" ref="bgmc">
+      <caption webpage="bgmc" alt=""/>
+    </file>
+    <file name="buddy barrel.jpg" crc="103296251" seo="true" ref="bgmc">
+      <caption webpage="bgmc" alt=""/>
+    </file>
+    <file name="band of brothers-crop-u9788.jpg" crc="467184463" seo="true" ref="men-s-ministries">
+      <caption webpage="men-s-ministries" alt=""/>
+    </file>
+    <file name="singlemomsweb.jpg" crc="206919945" seo="true" ref="day-of-thanks">
+      <caption webpage="day-of-thanks" alt=""/>
+    </file>
+    <file name="thanksgiving update web.jpg" crc="239140230" ref="thanksgiving">
+      <caption webpage="thanksgiving" alt=""/>
+    </file>
+    <file name="rooted fb.jpg" crc="78564000" seo="true" ref="rooted">
+      <caption webpage="rooted" alt=""/>
+    </file>
+    <file name="fathers-day-banner.jpg" crc="4083831088" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0068.jpg" crc="119047941" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0070.jpg" crc="3973455087" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0072.jpg" crc="3798219583" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0074.jpg" crc="239299499" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0076.jpg" crc="3858440766" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0078.jpg" crc="4224465374" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0080.jpg" crc="256606959" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0082.jpg" crc="458096016" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0084.jpg" crc="4216506640" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0086.jpg" crc="4030512339" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0091.jpg" crc="139794837" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0094.jpg" crc="230634695" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0096.jpg" crc="107528001" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0098.jpg" crc="476698769" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0100.jpg" crc="5524547" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0102.jpg" crc="4168518833" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0104.jpg" crc="461503716" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_0105.jpg" crc="517520469" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_006860x45.jpg" crc="3853438007" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_007060x45.jpg" crc="3809223622" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_007260x45.jpg" crc="4142138021" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_007460x45.jpg" crc="111150620" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_007660x45.jpg" crc="56486719" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_007860x45.jpg" crc="57528314" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_008060x45.jpg" crc="3936388660" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_008260x45.jpg" crc="3925894302" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_008460x45.jpg" crc="496575875" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_008660x45.jpg" crc="406774733" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_009160x45.jpg" crc="4100619666" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_009460x45.jpg" crc="411370565" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_009660x45.jpg" crc="530583336" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_009860x45.jpg" crc="24059639" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_010060x45.jpg" crc="3952981847" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_010260x45.jpg" crc="131783327" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_010460x45.jpg" crc="312383411" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="img_010560x45.jpg" crc="343483674" seo="true" ref="event-gallery">
+      <caption webpage="event-gallery" alt=""/>
+    </file>
+    <file name="vbs web.jpg" crc="3959958638" seo="true" ref="vbs">
+      <caption webpage="vbs" alt=""/>
+    </file>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="master_a-master.css" crc="3805948560" ref="phone>about:phone>news:phone>contact:phone>index:phone>portfolio:phone>services"/>
+      <file name="about.css" crc="3802642413" ref="phone>about"/>
+      <file name="news.css" crc="4251233492" ref="phone>news"/>
+      <file name="contact.css" crc="4157181583" ref="phone>contact"/>
+      <file name="index.css" crc="3841590704" ref="phone>index"/>
+      <file name="portfolio.css" crc="6729592" ref="phone>portfolio"/>
+      <file name="services.css" crc="141406903" ref="phone>services"/>
+    </folder>
+    <file name="index.html" crc="88301405" seo="true" mt="1518133151756" redirect="true"/>
+    <file name="about.html" crc="255981937" seo="true" mt="1518133151756" redirect="true"/>
+    <file name="services.html" crc="3762150856" seo="true" mt="1518133151756" redirect="true"/>
+    <file name="portfolio.html" crc="482478099" seo="true" mt="1518133151756" redirect="true"/>
+    <file name="contact.html" crc="85414555" seo="true" mt="1518133151756" redirect="true"/>
+    <file name="news.html" crc="183944181" seo="true" mt="1518133151756" redirect="true"/>
+  </folder>
+  <file name="index.html" crc="4023569400" seo="true" mt="1521045818680" redirect="true"/>
+  <file name="events.html" crc="206516586" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="ministries.html" crc="303694160" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="about.html" crc="3855699275" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="contact.html" crc="3979906660" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="children-s-ministries.html" crc="337280319" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="giving.html" crc="4009780395" seo="true" mt="1518648078933" redirect="true"/>
+  <file name="youth-ministries.html" crc="3805708199" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="oasis.html" crc="522797695" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="sunday-services.html" crc="4175562448" seo="true" mt="1518648078786" redirect="true"/>
+  <file name="wednesday-services.html" crc="3963128333" seo="true" mt="1518648078557" redirect="true"/>
+  <file name="kids-volunteer.html" crc="4168233772" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="craft-fair.html" crc="485846869" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="life-groups.html" crc="3946154589" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="life-group-sign-up.html" crc="3540189" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="thank-you.html" crc="4178483824" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="i-will-praise-his-name---presence.html" crc="4207720109" seo="true" mt="1518648078405" redirect="true"/>
+  <file name="iwphn--compassion.html" crc="318899626" seo="true" mt="1518648078411" redirect="true"/>
+  <file name="i-will-praise-his-name.html" crc="242002919" seo="true" mt="1518648078412" redirect="true"/>
+  <file name="elvanto-thank-you.html" crc="118692272" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="missions.html" crc="251633501" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="i-heart-alpine.html" crc="296843346" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="fall-festival.html" crc="488170173" seo="true" mt="1518648078138" redirect="true"/>
+  <file name="bgmc.html" crc="284690968" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="women-s-ministries.html" crc="120924973" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="men-s-ministries.html" crc="3759531847" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="day-of-thanks.html" crc="129730485" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="thanksgiving.html" crc="335820033" seo="true" mt="1518648077995" redirect="true"/>
+  <file name="rooted.html" crc="78769008" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="event-gallery.html" crc="126499210" seo="true" mt="1518133502039" redirect="true"/>
+  <file name="vbs.html" crc="402207454" seo="true" mt="1518133502039" redirect="true"/>
+</manifest>

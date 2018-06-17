@@ -1,0 +1,5133 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.0.386"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "jquery.musepolyfill.bgsize.js", "jquery.musemenu.js", "life-groups.css"], "outOfDate":[]};
+</script>
+  
+  <link rel="shortcut icon" href="images/favicon.ico?crc=3872601208"/>
+  <title>Life Groups</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4018332164"/>
+  <link rel="stylesheet" type="text/css" href="css/master_red.css?crc=193706446"/>
+  <link rel="stylesheet" type="text/css" href="css/life-groups.css?crc=4117352098" id="pagesheet"/>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   var __adobewebfontsappname__ = "muse";
+</script>
+  <!-- JS includes -->
+  <script src="https://webfonts.creativecloud.com/lobster:n4:all;open-sans-condensed:n7:all.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+    <!--HTML Widget code-->
+  
+
+<style>
+	#u7627 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7627 .panel .front2{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7627 .panel .back2{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7627 .hflip .front2{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7627 .hflip.flip .front2{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7627 .hflip .back2{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7627 .hflip.flip .back2{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7627 .hflip .front2,#u7627 .hflip .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7627 .hoflip .front2{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7627 .hoflip.flip .front2{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7627 .hoflip .back2{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7627 .hoflip.flip .back2{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7627 .hoflip .front2,#u7627 .hoflip .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7627 .vflip .front2{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .vflip.flip .front2{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .vflip .back2{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .vflip.flip .back2{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .vflip .front2,#u7627 .vflip .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7627 .voflip .front2{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .voflip.flip .front2{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .voflip .back2{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .voflip.flip .back2{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .voflip .front2,#u7627 .voflip .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7627 .diagonal .front2 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .diagonal .front2:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7627 .diagonal.flip .front2,
+	#u7627 .diagonal.flip .front2:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7627 .diagonal .back2 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .diagonal.flip .back2 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7627 .diagonal .front2,#u7627 .diagonal .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7627 .odiagonal .front2 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .odiagonal .front2:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7627 .odiagonal.flip .front2,
+	#u7627 .odiagonal.flip .front2:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7627 .odiagonal .back2 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7627 .odiagonal.flip .back2 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7627 .odiagonal .front2,#u7627 .odiagonal .back2{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7673 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7673 .panel .front4{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7673 .panel .back4{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7673 .hflip .front4{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7673 .hflip.flip .front4{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7673 .hflip .back4{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7673 .hflip.flip .back4{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7673 .hflip .front4,#u7673 .hflip .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7673 .hoflip .front4{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7673 .hoflip.flip .front4{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7673 .hoflip .back4{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7673 .hoflip.flip .back4{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7673 .hoflip .front4,#u7673 .hoflip .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7673 .vflip .front4{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .vflip.flip .front4{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .vflip .back4{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .vflip.flip .back4{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .vflip .front4,#u7673 .vflip .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7673 .voflip .front4{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .voflip.flip .front4{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .voflip .back4{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .voflip.flip .back4{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .voflip .front4,#u7673 .voflip .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7673 .diagonal .front4 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .diagonal .front4:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7673 .diagonal.flip .front4,
+	#u7673 .diagonal.flip .front4:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7673 .diagonal .back4 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .diagonal.flip .back4 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7673 .diagonal .front4,#u7673 .diagonal .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7673 .odiagonal .front4 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .odiagonal .front4:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7673 .odiagonal.flip .front4,
+	#u7673 .odiagonal.flip .front4:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7673 .odiagonal .back4 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7673 .odiagonal.flip .back4 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7673 .odiagonal .front4,#u7673 .odiagonal .back4{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7616 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7616 .panel .front1{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7616 .panel .back1{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7616 .hflip .front1{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7616 .hflip.flip .front1{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7616 .hflip .back1{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7616 .hflip.flip .back1{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7616 .hflip .front1,#u7616 .hflip .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7616 .hoflip .front1{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7616 .hoflip.flip .front1{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7616 .hoflip .back1{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7616 .hoflip.flip .back1{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7616 .hoflip .front1,#u7616 .hoflip .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7616 .vflip .front1{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .vflip.flip .front1{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .vflip .back1{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .vflip.flip .back1{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .vflip .front1,#u7616 .vflip .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7616 .voflip .front1{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .voflip.flip .front1{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .voflip .back1{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .voflip.flip .back1{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .voflip .front1,#u7616 .voflip .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7616 .diagonal .front1 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .diagonal .front1:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7616 .diagonal.flip .front1,
+	#u7616 .diagonal.flip .front1:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7616 .diagonal .back1 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .diagonal.flip .back1 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7616 .diagonal .front1,#u7616 .diagonal .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7616 .odiagonal .front1 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .odiagonal .front1:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7616 .odiagonal.flip .front1,
+	#u7616 .odiagonal.flip .front1:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7616 .odiagonal .back1 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7616 .odiagonal.flip .back1 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7616 .odiagonal .front1,#u7616 .odiagonal .back1{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7639 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7639 .panel .front3{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7639 .panel .back3{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7639 .hflip .front3{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7639 .hflip.flip .front3{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7639 .hflip .back3{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7639 .hflip.flip .back3{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7639 .hflip .front3,#u7639 .hflip .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7639 .hoflip .front3{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7639 .hoflip.flip .front3{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7639 .hoflip .back3{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7639 .hoflip.flip .back3{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7639 .hoflip .front3,#u7639 .hoflip .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7639 .vflip .front3{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .vflip.flip .front3{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .vflip .back3{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .vflip.flip .back3{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .vflip .front3,#u7639 .vflip .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7639 .voflip .front3{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .voflip.flip .front3{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .voflip .back3{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .voflip.flip .back3{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .voflip .front3,#u7639 .voflip .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7639 .diagonal .front3 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .diagonal .front3:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7639 .diagonal.flip .front3,
+	#u7639 .diagonal.flip .front3:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7639 .diagonal .back3 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .diagonal.flip .back3 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7639 .diagonal .front3,#u7639 .diagonal .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7639 .odiagonal .front3 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .odiagonal .front3:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7639 .odiagonal.flip .front3,
+	#u7639 .odiagonal.flip .front3:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7639 .odiagonal .back3 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7639 .odiagonal.flip .back3 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7639 .odiagonal .front3,#u7639 .odiagonal .back3{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7720 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7720 .panel .front10{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7720 .panel .back10{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7720 .hflip .front10{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7720 .hflip.flip .front10{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7720 .hflip .back10{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7720 .hflip.flip .back10{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7720 .hflip .front10,#u7720 .hflip .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7720 .hoflip .front10{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7720 .hoflip.flip .front10{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7720 .hoflip .back10{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7720 .hoflip.flip .back10{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7720 .hoflip .front10,#u7720 .hoflip .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7720 .vflip .front10{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .vflip.flip .front10{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .vflip .back10{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .vflip.flip .back10{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .vflip .front10,#u7720 .vflip .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7720 .voflip .front10{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .voflip.flip .front10{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .voflip .back10{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .voflip.flip .back10{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .voflip .front10,#u7720 .voflip .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7720 .diagonal .front10 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .diagonal .front10:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7720 .diagonal.flip .front10,
+	#u7720 .diagonal.flip .front10:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7720 .diagonal .back10 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .diagonal.flip .back10 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7720 .diagonal .front10,#u7720 .diagonal .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7720 .odiagonal .front10 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .odiagonal .front10:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7720 .odiagonal.flip .front10,
+	#u7720 .odiagonal.flip .front10:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7720 .odiagonal .back10 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7720 .odiagonal.flip .back10 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7720 .odiagonal .front10,#u7720 .odiagonal .back10{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7709 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7709 .panel .front8{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7709 .panel .back8{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7709 .hflip .front8{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7709 .hflip.flip .front8{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7709 .hflip .back8{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7709 .hflip.flip .back8{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7709 .hflip .front8,#u7709 .hflip .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7709 .hoflip .front8{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7709 .hoflip.flip .front8{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7709 .hoflip .back8{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7709 .hoflip.flip .back8{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7709 .hoflip .front8,#u7709 .hoflip .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7709 .vflip .front8{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .vflip.flip .front8{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .vflip .back8{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .vflip.flip .back8{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .vflip .front8,#u7709 .vflip .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7709 .voflip .front8{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .voflip.flip .front8{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .voflip .back8{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .voflip.flip .back8{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .voflip .front8,#u7709 .voflip .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7709 .diagonal .front8 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .diagonal .front8:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7709 .diagonal.flip .front8,
+	#u7709 .diagonal.flip .front8:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7709 .diagonal .back8 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .diagonal.flip .back8 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7709 .diagonal .front8,#u7709 .diagonal .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7709 .odiagonal .front8 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .odiagonal .front8:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7709 .odiagonal.flip .front8,
+	#u7709 .odiagonal.flip .front8:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7709 .odiagonal .back8 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7709 .odiagonal.flip .back8 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7709 .odiagonal .front8,#u7709 .odiagonal .back8{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7698 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7698 .panel .front7{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7698 .panel .back7{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7698 .hflip .front7{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7698 .hflip.flip .front7{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7698 .hflip .back7{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7698 .hflip.flip .back7{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7698 .hflip .front7,#u7698 .hflip .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7698 .hoflip .front7{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7698 .hoflip.flip .front7{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7698 .hoflip .back7{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7698 .hoflip.flip .back7{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7698 .hoflip .front7,#u7698 .hoflip .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7698 .vflip .front7{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .vflip.flip .front7{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .vflip .back7{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .vflip.flip .back7{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .vflip .front7,#u7698 .vflip .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7698 .voflip .front7{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .voflip.flip .front7{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .voflip .back7{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .voflip.flip .back7{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .voflip .front7,#u7698 .voflip .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7698 .diagonal .front7 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .diagonal .front7:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7698 .diagonal.flip .front7,
+	#u7698 .diagonal.flip .front7:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7698 .diagonal .back7 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .diagonal.flip .back7 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7698 .diagonal .front7,#u7698 .diagonal .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7698 .odiagonal .front7 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .odiagonal .front7:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7698 .odiagonal.flip .front7,
+	#u7698 .odiagonal.flip .front7:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7698 .odiagonal .back7 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7698 .odiagonal.flip .back7 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7698 .odiagonal .front7,#u7698 .odiagonal .back7{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u7742 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u7742 .panel .front12{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u7742 .panel .back12{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u7742 .hflip .front12{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7742 .hflip.flip .front12{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u7742 .hflip .back12{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7742 .hflip.flip .back12{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7742 .hflip .front12,#u7742 .hflip .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u7742 .hoflip .front12{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u7742 .hoflip.flip .front12{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u7742 .hoflip .back12{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u7742 .hoflip.flip .back12{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u7742 .hoflip .front12,#u7742 .hoflip .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u7742 .vflip .front12{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .vflip.flip .front12{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .vflip .back12{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .vflip.flip .back12{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .vflip .front12,#u7742 .vflip .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u7742 .voflip .front12{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .voflip.flip .front12{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .voflip .back12{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .voflip.flip .back12{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .voflip .front12,#u7742 .voflip .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u7742 .diagonal .front12 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .diagonal .front12:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7742 .diagonal.flip .front12,
+	#u7742 .diagonal.flip .front12:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u7742 .diagonal .back12 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .diagonal.flip .back12 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u7742 .diagonal .front12,#u7742 .diagonal .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u7742 .odiagonal .front12 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .odiagonal .front12:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u7742 .odiagonal.flip .front12,
+	#u7742 .odiagonal.flip .front12:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u7742 .odiagonal .back12 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u7742 .odiagonal.flip .back12 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u7742 .odiagonal .front12,#u7742 .odiagonal .back12{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u20447 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u20447 .panel .front17{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u20447 .panel .back17{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u20447 .hflip .front17{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20447 .hflip.flip .front17{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u20447 .hflip .back17{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20447 .hflip.flip .back17{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u20447 .hflip .front17,#u20447 .hflip .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u20447 .hoflip .front17{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20447 .hoflip.flip .front17{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u20447 .hoflip .back17{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u20447 .hoflip.flip .back17{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u20447 .hoflip .front17,#u20447 .hoflip .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u20447 .vflip .front17{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .vflip.flip .front17{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .vflip .back17{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .vflip.flip .back17{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .vflip .front17,#u20447 .vflip .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u20447 .voflip .front17{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .voflip.flip .front17{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .voflip .back17{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .voflip.flip .back17{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .voflip .front17,#u20447 .voflip .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u20447 .diagonal .front17 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .diagonal .front17:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u20447 .diagonal.flip .front17,
+	#u20447 .diagonal.flip .front17:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u20447 .diagonal .back17 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .diagonal.flip .back17 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u20447 .diagonal .front17,#u20447 .diagonal .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u20447 .odiagonal .front17 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .odiagonal .front17:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u20447 .odiagonal.flip .front17,
+	#u20447 .odiagonal.flip .front17:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u20447 .odiagonal .back17 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20447 .odiagonal.flip .back17 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u20447 .odiagonal .front17,#u20447 .odiagonal .back17{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u24963 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u24963 .panel .front19{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u24963 .panel .back19{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u24963 .hflip .front19{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24963 .hflip.flip .front19{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u24963 .hflip .back19{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24963 .hflip.flip .back19{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u24963 .hflip .front19,#u24963 .hflip .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u24963 .hoflip .front19{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24963 .hoflip.flip .front19{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u24963 .hoflip .back19{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u24963 .hoflip.flip .back19{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u24963 .hoflip .front19,#u24963 .hoflip .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u24963 .vflip .front19{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .vflip.flip .front19{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .vflip .back19{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .vflip.flip .back19{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .vflip .front19,#u24963 .vflip .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u24963 .voflip .front19{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .voflip.flip .front19{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .voflip .back19{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .voflip.flip .back19{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .voflip .front19,#u24963 .voflip .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u24963 .diagonal .front19 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .diagonal .front19:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u24963 .diagonal.flip .front19,
+	#u24963 .diagonal.flip .front19:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u24963 .diagonal .back19 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .diagonal.flip .back19 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u24963 .diagonal .front19,#u24963 .diagonal .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u24963 .odiagonal .front19 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .odiagonal .front19:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u24963 .odiagonal.flip .front19,
+	#u24963 .odiagonal.flip .front19:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u24963 .odiagonal .back19 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24963 .odiagonal.flip .back19 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u24963 .odiagonal .front19,#u24963 .odiagonal .back19{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u20480 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u20480 .panel .front14{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u20480 .panel .back14{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u20480 .hflip .front14{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20480 .hflip.flip .front14{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u20480 .hflip .back14{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20480 .hflip.flip .back14{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u20480 .hflip .front14,#u20480 .hflip .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u20480 .hoflip .front14{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u20480 .hoflip.flip .front14{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u20480 .hoflip .back14{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u20480 .hoflip.flip .back14{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u20480 .hoflip .front14,#u20480 .hoflip .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u20480 .vflip .front14{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .vflip.flip .front14{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .vflip .back14{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .vflip.flip .back14{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .vflip .front14,#u20480 .vflip .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u20480 .voflip .front14{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .voflip.flip .front14{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .voflip .back14{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .voflip.flip .back14{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .voflip .front14,#u20480 .voflip .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u20480 .diagonal .front14 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .diagonal .front14:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u20480 .diagonal.flip .front14,
+	#u20480 .diagonal.flip .front14:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u20480 .diagonal .back14 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .diagonal.flip .back14 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u20480 .diagonal .front14,#u20480 .diagonal .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u20480 .odiagonal .front14 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .odiagonal .front14:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u20480 .odiagonal.flip .front14,
+	#u20480 .odiagonal.flip .front14:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u20480 .odiagonal .back14 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u20480 .odiagonal.flip .back14 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u20480 .odiagonal .front14,#u20480 .odiagonal .back14{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+
+<style>
+	#u24364 .panel {
+		float: left;
+		width: 200px;
+		height: 200px;
+		/*margin: 20px;
+		 font-size: .8em;
+		 */
+		position: relative;
+
+		-webkit-perspective: 600px;
+		   -moz-perspective: 600px;
+		        perspective: 600px;
+		
+	}
+	#u24364 .panel .front18{
+		
+		z-index:900;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	
+	}
+	#u24364 .panel .back18{
+		
+		z-index:800;
+		position:absolute;
+		margin:0px;
+		float: none;
+		top: 0;
+		left: 0;
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		        transform-style: preserve-3d;
+
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		        backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+	
+	/*** Horizontal flip ***/
+	
+	#u24364 .hflip .front18{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24364 .hflip.flip .front18{
+		
+		z-index:900;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg);
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+
+	#u24364 .hflip .back18{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24364 .hflip.flip .back18{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u24364 .hflip .front18,#u24364 .hflip .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Horizontal flip other direction ***/
+	
+	#u24364 .hoflip .front18{
+		
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+
+		
+	}
+	#u24364 .hoflip.flip .front18{
+		
+		z-index:900;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-179deg);
+		        transform: rotateY(-179deg);
+		         -webkit-transform-origin: 50% 50%;
+		    
+	}
+	
+
+	#u24364 .hoflip .back18{
+		
+		cursor: pointer;
+		-webkit-transform: rotateY(180deg);
+		   -moz-transform: rotateY(180deg); /* setting to 180 causes an unnatural-looking half-flip */
+		        transform: rotateY(180deg);
+		         -webkit-transform-origin: 50% 50%;
+		       
+
+		
+	}
+	#u24364 .hoflip.flip .back18{
+	
+		z-index:1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		        transform: rotateX(0deg) rotateY(0deg);
+		         -webkit-transform-origin: 50% 50%;
+		        
+	}
+	
+	#u24364 .hoflip .front18,#u24364 .hoflip .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+		
+	}
+	
+	/*** Vertical flip ***/
+	
+	#u24364 .vflip .front18{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .vflip.flip .front18{
+		
+		z-index:900;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .vflip .back18{
+		cursor: pointer;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .vflip.flip .back18{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .vflip .front18,#u24364 .vflip .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** Vertical flip other direction ***/
+	
+	#u24364 .voflip .front18{
+		cursor: pointer;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .voflip.flip .front18{
+		
+		z-index:900;
+		-webkit-transform: rotateX(-180deg);
+		   -moz-transform: rotateX(-180deg);
+		        transform: rotateX(-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .voflip .back18{
+		cursor: pointer;
+		-webkit-transform: rotateX(180deg);
+		   -moz-transform: rotateX(180deg);
+		        transform: rotateX(180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .voflip.flip .back18{
+		
+		z-index:1000;
+		-webkit-transform: rotateX(0deg);
+		   -moz-transform: rotateX(0deg);
+		        transform: rotateX(0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .voflip .front18,#u24364 .voflip .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+	/*** diagonal flip ***/
+	#u24364 .diagonal .front18 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .diagonal .front18:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(45,45,0,-36deg);
+		   -moz-transform: rotate3d(45,45,0,-36deg);
+		        transform: rotate3d(45,45,0,-36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u24364 .diagonal.flip .front18,
+	#u24364 .diagonal.flip .front18:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		    -moz-transform: rotate3d(-45,-45,0,180deg);
+		         transform: rotate3d(-45,-45,0,180deg);
+		          -webkit-transform-origin: 50% 50%;
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+	}
+
+
+	#u24364 .diagonal .back18 {
+		
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .diagonal.flip .back18 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+	}
+	
+	#u24364 .diagonal .front18,#u24364 .diagonal .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	/*** diagonal flip other direction ***/
+	#u24364 .odiagonal .front18 {
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .odiagonal .front18:hover {
+		/* for the patient :) */
+		-webkit-transition-duration: 10s;
+		   -moz-transition-duration: 10s;
+		        transition-duration: 10s;
+
+		-webkit-transform: rotate3d(-45,-45,0,36deg);
+		   -moz-transform: rotate3d(-45,-45,0,36deg);
+		        transform: rotate3d(-45,-45,0,36deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+	#u24364 .odiagonal.flip .front18,
+	#u24364 .odiagonal.flip .front18:hover {
+	
+		z-index:900;
+		-webkit-transform: rotate3d(45,45,0,-180deg);
+		   -moz-transform: rotate3d(45,45,0,-180deg);
+		        transform: rotate3d(45,45,0,-180deg);
+
+		-webkit-transition: all .4s ease-in-out;
+		        transition: all .4s ease-in-out;
+		         -webkit-transform-origin: 50% 50%;
+	}
+
+
+	#u24364 .odiagonal .back18 {
+		
+		-webkit-transform: rotate3d(-45,-45,0,180deg);
+		   -moz-transform: rotate3d(-45,-45,0,180deg);
+		        transform: rotate3d(-45,-45,0,180deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	#u24364 .odiagonal.flip .back18 {
+		
+		z-index:1000;
+		-webkit-transform: rotate3d(45,45,0,0deg);
+		   -moz-transform: rotate3d(45,45,0,0deg);
+		        transform: rotate3d(45,45,0,0deg);
+		         -webkit-transform-origin: 50% 50%;
+	}
+	
+	#u24364 .odiagonal .front18,#u24364 .odiagonal .back18{
+		
+		transform-origin:center center 0;
+		 -webkit-transform-origin: 50% 50%;
+	}
+	
+	
+</style>
+
+
+
+ </head>
+ <body>
+
+  <div class="clearfix" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="ppmenuu3940"><!-- column -->
+    <div class="clearfix colelem" id="pmenuu3940"><!-- group -->
+     <nav class="MenuBar clearfix grpelem" id="menuu3940"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u3983"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u3986" href="index.html" data-href="page:U65"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3989-4"><!-- content --><p>Home</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3969"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u3972" href="about.html" data-href="page:U1128"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3975-4"><!-- content --><p>About</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3955"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u3956" href="ministries.html" data-href="page:U922"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3958-4"><!-- content --><p>Ministries</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3962"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u3963" href="events.html" data-href="page:U716"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3966-4"><!-- content --><p>Events</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u6143"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u6144" href="giving.html" data-href="page:U6142"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u6147-4"><!-- content --><p>Giving</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u3976"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u3977" href="contact.html" data-href="page:U1334"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3980-4"><!-- content --><p>Contact</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u19602"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix colelem" id="u19605" href="elvanto-thank-you.html" data-href="page:U8606"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u19606-4" data-IBE-flags="txtStyleSrc"><!-- content --><p>&nbsp;Elvanto Thank You</p></div></a>
+      </div>
+     </nav>
+     <a class="nonblock nontext clip_frame grpelem" id="u3990" href="index.html" data-href="page:U65"><!-- image --><img class="block" id="u3990_img" src="images/home_icon.png?crc=3995069933" alt="" width="17" height="17"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u3992" href="about.html" data-href="page:U1128"><!-- image --><img class="block" id="u3992_img" src="images/about_icon.png?crc=3798618968" alt="" width="17" height="17"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u3994" href="ministries.html" data-href="page:U922"><!-- image --><img class="block" id="u3994_img" src="images/services_icon.png?crc=378524790" alt="" width="21" height="21"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u3996" href="events.html" data-href="page:U716"><!-- image --><img class="block" id="u3996_img" src="images/portfolio_icon.png?crc=121174711" alt="" width="17" height="17"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u6177" href="giving.html" data-href="page:U6142"><!-- image --><img class="block" id="u6177_img" src="images/donate.png?crc=3885341207" alt="" width="17" height="15"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u8410" href="index.html" data-href="page:U65"><!-- image --><img class="block" id="u8410_img" src="images/logo%20.png?crc=3946712288" alt="" width="223" height="61"/></a>
+     <div class="grpelem" id="u19627"><!-- simple frame --></div>
+     <div class="clip_frame grpelem" id="u19630"><!-- image -->
+      <img class="block" id="u19630_img" src="images/contact%20icon.png?crc=313814171" alt="" width="17" height="17"/>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u7517-bw">
+     <div id="u7517"><!-- group -->
+      <div class="clearfix" id="u7517_align_to_page">
+       <div class="clearfix grpelem" id="pu7473-4"><!-- column -->
+        <!-- m_editable region-id="editable-static-tag-U7473-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="heading3 clearfix colelem" id="u7473-4" data-muse-uid="U7473" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <h2>Life Groups</h2>
+        </div>
+        <!-- /m_editable -->
+        <!-- m_editable region-id="editable-static-tag-U7478-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+        <div class="bodytext clearfix colelem" id="u7478-4" data-muse-uid="U7478" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Small group based Bible studies.</p>
+        </div>
+        <!-- /m_editable -->
+       </div>
+       <!-- m_editable region-id="editable-static-tag-U7476-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix grpelem" id="u7476-4" data-muse-uid="U7476" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>You are here:</p>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U7522-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+       <div class="clearfix grpelem" id="u7522-4" data-muse-uid="U7522" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+        <p>Bethel /</p>
+       </div>
+       <!-- /m_editable -->
+       <!-- m_editable region-id="editable-static-tag-U7519-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+       <a class="nonblock nontext clearfix grpelem" id="u7519-4" href="contact.html" data-href="page:U1334" data-muse-uid="U7519" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p>Events</p></a>
+       <!-- /m_editable -->
+      </div>
+     </div>
+    </div>
+    <div class="museBGSize colelem" id="u7477"><!-- simple frame --></div>
+    <!-- m_editable region-id="editable-static-tag-U7474-BP_infinity" template="life-groups.html" data-type="image" -->
+    <div class="clip_frame colelem" id="u7474" data-muse-uid="U7474" data-muse-type="img_frame"><!-- image -->
+     <img class="block" id="u7474_img" src="images/slider_shadow.png?crc=26595705" alt="" width="984" height="68" data-muse-src="images/slider_shadow.png?crc=26595705"/>
+    </div>
+    <!-- /m_editable -->
+    <!-- m_editable region-id="editable-static-tag-U7590-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+    <div class="heading3 clearfix colelem" id="u7590-6" data-muse-uid="U7590" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+     <h2>Scroll over a box to learn more about</h2>
+     <h2>what each group has to offer</h2>
+    </div>
+    <!-- /m_editable -->
+    <div class="clearfix colelem" id="ppu7618-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu7618-5"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U7618-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back2 clearfix grpelem" id="u7618-5" data-muse-uid="U7618" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7618">​</span><span class="actAsInlineDiv normal_text" id="u7619"><!-- content --><!-- m_editable region-id="editable-static-tag-U7620-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7620-17" data-muse-uid="U7620" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7620">&nbsp;</span><span class="actAsPara" id="u7620-2">&nbsp;</span><span class="actAsPara" id="u7620-3">&nbsp;</span><span class="actAsPara" id="u7620-4">&nbsp;</span><span class="actAsPara" id="u7620-5">&nbsp;</span><span class="actAsPara" id="u7620-6">&nbsp;</span><span class="actAsPara" id="u7620-7">&nbsp;</span><span class="actAsPara" id="u7620-9">Within this study, we will discover the Biblical foundation to present a model of feminine strength that will empower and impact every area of a woman's life.</span><span class="actAsPara" id="u7620-10">&nbsp;</span><span class="actAsPara" id="u7620-11">&nbsp;</span><span class="actAsPara" id="u7620-13">This study will take place on FACEBOOK</span><span class="actAsPara" id="u7620-14">&nbsp;</span><span class="actAsPara" id="u7620-15">&nbsp;</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U7621-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front2 clearfix grpelem" id="u7621-6" data-muse-uid="U7621" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7621">​</span><span class="actAsInlineDiv normal_text" id="u7625"><!-- content --><!-- m_editable region-id="editable-static-tag-U7626-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7626-19" data-muse-uid="U7626" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7626-2">Girls With Swords</span><span class="actAsPara" id="u7626-4">ONLINE</span><span class="actAsPara" id="u7626-6"><span id="u7626-5">(Begins Feb. 8)</span></span><span class="actAsPara" id="u7626-7">&nbsp;</span><span class="actAsPara" id="u7626-10"><span id="u7626-8">For:</span> Women</span><span class="actAsPara" id="u7626-11">&nbsp;</span><span class="actAsPara" id="u7626-13">Kristi Roedell</span><span class="actAsPara" id="u7626-14">&nbsp;</span><span class="actAsPara" id="u7626-16">Thursdays</span><span class="actAsPara" id="u7626-17">&nbsp;</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7622"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7623" data-muse-uid="U7623" data-muse-type="img_frame"><!-- image --><img id="u7623_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+      <div class="size_fixed grpelem" id="u7627"><!-- custom html -->
+       
+<div class="panel vflip"></div>
+
+                
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="pu7673"><!-- group -->
+      <div class="size_fixed grpelem" id="u7673"><!-- custom html -->
+       
+<div class="panel hoflip"></div>
+
+                
+      </div>
+      <!-- m_editable region-id="editable-static-tag-U7774-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back4 clearfix grpelem" id="u7774-5" data-muse-uid="U7774" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7774">​</span><span class="actAsInlineDiv normal_text" id="u7775"><!-- content --><!-- m_editable region-id="editable-static-tag-U7776-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7776-15" data-muse-uid="U7776" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7776">&nbsp;</span><span class="actAsPara" id="u7776-2">&nbsp;</span><span class="actAsPara" id="u7776-3">&nbsp;</span><span class="actAsPara" id="u7776-4">&nbsp;</span><span class="actAsPara" id="u7776-5">&nbsp;</span><span class="actAsPara" id="u7776-6">&nbsp;</span><span class="actAsPara" id="u7776-7">&nbsp;</span><span class="actAsPara" id="u7776-9">A time of intercessory prayer and approaching the throne room of God. Praying for our church, our community, and our nation.</span><span class="actAsPara" id="u7776-10">&nbsp;</span><span class="actAsPara" id="u7776-11">&nbsp;</span><span class="actAsPara" id="u7776-13">Bethel Sanctuary</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U7667-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front4 clearfix grpelem" id="u7667-6" data-muse-uid="U7667" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7667">​</span><span class="actAsInlineDiv normal_text" id="u7668"><!-- content --><!-- m_editable region-id="editable-static-tag-U7669-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7669-19" data-muse-uid="U7669" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7669-2">War Room</span><span class="actAsPara" id="u7669-4">Intercessory Prayer</span><span class="actAsPara" id="u7669-5">&nbsp;</span><span class="actAsPara" id="u7669-6">&nbsp;</span><span class="actAsPara" id="u7669-7">&nbsp;</span><span class="actAsPara" id="u7669-8">&nbsp;</span><span class="actAsPara" id="u7669-11"><span id="u7669-9">For:</span> Men &amp; Women</span><span class="actAsPara" id="u7669-12">&nbsp;</span><span class="actAsPara" id="u7669-14">Lori Loftus &amp; Diana Kay</span><span class="actAsPara" id="u7669-15">&nbsp;</span><span class="actAsPara" id="u7669-17">Wednesdays at 9:30am</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7670"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7671" data-muse-uid="U7671" data-muse-type="img_frame"><!-- image --><img id="u7671_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U7594-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back1 clearfix grpelem" id="u7594-5" data-muse-uid="U7594" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7594">​</span><span class="actAsInlineDiv normal_text" id="u7615"><!-- content --><!-- m_editable region-id="editable-static-tag-U7614-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7614-18" data-muse-uid="U7614" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7614">&nbsp;</span><span class="actAsPara" id="u7614-2">&nbsp;</span><span class="actAsPara" id="u7614-3">&nbsp;</span><span class="actAsPara" id="u7614-4">&nbsp;</span><span class="actAsPara" id="u7614-5">&nbsp;</span><span class="actAsPara" id="u7614-7">Within this study, we will discover the Biblical foundation to present a model of feminine strength that will empower and impact every area of a woman's life.</span><span class="actAsPara" id="u7614-8">&nbsp;</span><span class="actAsPara" id="u7614-10">Childcare provided at the Church for children 12 and under</span><span class="actAsPara" id="u7614-11">&nbsp;</span><span class="actAsPara" id="u7614-13">1829 ARNOLD WAY #1601</span><span class="actAsPara" id="u7614-15">ALPINE, 91901</span><span class="actAsPara" id="u7614-16">&nbsp;</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U7592-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front1 clearfix grpelem" id="u7592-6" data-muse-uid="U7592" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7592">​</span><span class="actAsInlineDiv normal_text" id="u7598"><!-- content --><!-- m_editable region-id="editable-static-tag-U7597-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7597-17" data-muse-uid="U7597" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7597-2">Girls With Swords</span><span class="actAsPara" id="u7597-4"><span id="u7597-3">(Begins Feb. 7)</span></span><span class="actAsPara" id="u7597-5">&nbsp;</span><span class="actAsPara" id="u7597-6">&nbsp;</span><span class="actAsPara" id="u7597-9"><span id="u7597-7">For: </span>Women</span><span class="actAsPara" id="u7597-10">&nbsp;</span><span class="actAsPara" id="u7597-12">Kristi Roedell</span><span class="actAsPara" id="u7597-13">&nbsp;</span><span class="actAsPara" id="u7597-15">Wednesdays at 7:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7611"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7605" data-muse-uid="U7605" data-muse-type="img_frame"><!-- image --><img id="u7605_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u7616"><!-- custom html -->
+      
+<div class="panel hflip"></div>
+
+                
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U7630-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back3 clearfix grpelem" id="u7630-5" data-muse-uid="U7630" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7630">​</span><span class="actAsInlineDiv normal_text" id="u7631"><!-- content --><!-- m_editable region-id="editable-static-tag-U7632-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7632-18" data-muse-uid="U7632" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7632">&nbsp;</span><span class="actAsPara" id="u7632-2">&nbsp;</span><span class="actAsPara" id="u7632-3">&nbsp;</span><span class="actAsPara" id="u7632-4">&nbsp;</span><span class="actAsPara" id="u7632-5">&nbsp;</span><span class="actAsPara" id="u7632-6">&nbsp;</span><span class="actAsPara" id="u7632-8">Dissecting Pastor’s message from the previous Sunday and perhaps allowing God to reveal a deeper truth to you.</span><span class="actAsPara" id="u7632-9">&nbsp;</span><span class="actAsPara" id="u7632-10">&nbsp;</span><span class="actAsPara" id="u7632-12">Childcare provided at the Church</span><span class="actAsPara" id="u7632-13">&nbsp;</span><span class="actAsPara" id="u7632-14">&nbsp;</span><span class="actAsPara" id="u7632-16">Bethel Fellowship Hall</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U7633-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front3 clearfix grpelem" id="u7633-6" data-muse-uid="U7633" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7633">​</span><span class="actAsInlineDiv normal_text" id="u7637"><!-- content --><!-- m_editable region-id="editable-static-tag-U7638-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7638-16" data-muse-uid="U7638" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7638-2">Sermon Based</span><span class="actAsPara" id="u7638-3">&nbsp;</span><span class="actAsPara" id="u7638-4">&nbsp;</span><span class="actAsPara" id="u7638-7"><span id="u7638-5">For:</span> Men &amp; Women</span><span class="actAsPara" id="u7638-8">&nbsp;</span><span class="actAsPara" id="u7638-10">Pastor Greg Roedell</span><span class="actAsPara" id="u7638-11">&nbsp;</span><span class="actAsPara" id="u7638-13">Wednesdays at 7:00pm</span><span class="actAsPara" id="u7638-14">&nbsp;</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7634"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7635" data-muse-uid="U7635" data-muse-type="img_frame"><!-- image --><img id="u7635_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u7639"><!-- custom html -->
+      
+<div class="panel voflip"></div>
+
+                
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu7711-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu7711-5"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U7711-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back10 clearfix grpelem" id="u7711-5" data-muse-uid="U7711" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7711">​</span><span class="actAsInlineDiv normal_text" id="u7712"><!-- content --><!-- m_editable region-id="editable-static-tag-U7713-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7713-16" data-muse-uid="U7713" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7713">&nbsp;</span><span class="actAsPara" id="u7713-2">&nbsp;</span><span class="actAsPara" id="u7713-3">&nbsp;</span><span class="actAsPara" id="u7713-4">&nbsp;</span><span class="actAsPara" id="u7713-5">&nbsp;</span><span class="actAsPara" id="u7713-6">&nbsp;</span><span class="actAsPara" id="u7713-7">&nbsp;</span><span class="actAsPara" id="u7713-9">Dissecting Pastor’s message from the previous Sunday and perhaps allowing God to reveal a deeper truth to you.</span><span class="actAsPara" id="u7713-10">&nbsp;</span><span class="actAsPara" id="u7713-11">&nbsp;</span><span class="actAsPara" id="u7713-12">&nbsp;</span><span class="actAsPara" id="u7713-14">Bethel Fellowship Hall</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U7714-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front10 clearfix grpelem" id="u7714-6" data-muse-uid="U7714" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7714">​</span><span class="actAsInlineDiv normal_text" id="u7715"><!-- content --><!-- m_editable region-id="editable-static-tag-U7716-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7716-14" data-muse-uid="U7716" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7716-2">Sermon Based</span><span class="actAsPara" id="u7716-3">&nbsp;</span><span class="actAsPara" id="u7716-6"><span id="u7716-4">For:</span> Men &amp; Women</span><span class="actAsPara" id="u7716-7">&nbsp;</span><span class="actAsPara" id="u7716-9">Fred Pfeiffer</span><span class="actAsPara" id="u7716-10">&nbsp;</span><span class="actAsPara" id="u7716-12">Thursdays at 10:00am</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7717"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7718" data-muse-uid="U7718" data-muse-type="img_frame"><!-- image --><img id="u7718_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+      <div class="size_fixed grpelem" id="u7720"><!-- custom html -->
+       
+<div class="panel hoflip"></div>
+
+                
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="pu7700-5"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U7700-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back8 clearfix grpelem" id="u7700-5" data-muse-uid="U7700" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7700">​</span><span class="actAsInlineDiv normal_text" id="u7701"><!-- content --><!-- m_editable region-id="editable-static-tag-U7702-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7702-16" data-muse-uid="U7702" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7702">&nbsp;</span><span class="actAsPara" id="u7702-2">&nbsp;</span><span class="actAsPara" id="u7702-3">&nbsp;</span><span class="actAsPara" id="u7702-4">&nbsp;</span><span class="actAsPara" id="u7702-5">&nbsp;</span><span class="actAsPara" id="u7702-6">&nbsp;</span><span class="actAsPara" id="u7702-7">&nbsp;</span><span class="actAsPara" id="u7702-9">Discussing what the Bible has to say about today's world and the issues we face that can put our integrity on the line.</span><span class="actAsPara" id="u7702-10">&nbsp;</span><span class="actAsPara" id="u7702-11">&nbsp;</span><span class="actAsPara" id="u7702-13">1829 Arnold Way&nbsp; #1601</span><span class="actAsPara" id="u7702-14">&nbsp;</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U7703-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front8 clearfix grpelem" id="u7703-6" data-muse-uid="U7703" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u7703">​</span><span class="actAsInlineDiv normal_text" id="u7704"><!-- content --><!-- m_editable region-id="editable-static-tag-U7705-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7705-14" data-muse-uid="U7705" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7705-2">Anchored Men</span><span class="actAsPara" id="u7705-3">&nbsp;</span><span class="actAsPara" id="u7705-6"><span id="u7705-4">For:</span> Men</span><span class="actAsPara" id="u7705-7">&nbsp;</span><span class="actAsPara" id="u7705-9">Pastor Greg Roedell</span><span class="actAsPara" id="u7705-10">&nbsp;</span><span class="actAsPara" id="u7705-12">Thursdays at 7:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7706"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7707" data-muse-uid="U7707" data-muse-type="img_frame"><!-- image --><img id="u7707_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+      <div class="size_fixed grpelem" id="u7709"><!-- custom html -->
+       
+<div class="panel vflip"></div>
+
+                
+      </div>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U7689-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back7 clearfix grpelem" id="u7689-5" data-muse-uid="U7689" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7689">​</span><span class="actAsInlineDiv normal_text" id="u7690"><!-- content --><!-- m_editable region-id="editable-static-tag-U7691-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7691-15" data-muse-uid="U7691" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7691">&nbsp;</span><span class="actAsPara" id="u7691-2">&nbsp;</span><span class="actAsPara" id="u7691-3">&nbsp;</span><span class="actAsPara" id="u7691-4">&nbsp;</span><span class="actAsPara" id="u7691-5">&nbsp;</span><span class="actAsPara" id="u7691-6">&nbsp;</span><span class="actAsPara" id="u7691-7">&nbsp;</span><span class="actAsPara" id="u7691-9">Diving deeper into the book of Romans and perhaps uncovering some truths not yet discovered.</span><span class="actAsPara" id="u7691-10">&nbsp;</span><span class="actAsPara" id="u7691-11">&nbsp;</span><span class="actAsPara" id="u7691-13">12377 Winter Gardens Dr</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U7692-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front7 clearfix grpelem" id="u7692-6" data-muse-uid="U7692" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7692">​</span><span class="actAsInlineDiv normal_text" id="u7693"><!-- content --><!-- m_editable region-id="editable-static-tag-U7694-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7694-15" data-muse-uid="U7694" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7694-2">Romans</span><span class="actAsPara" id="u7694-3">&nbsp;</span><span class="actAsPara" id="u7694-4">&nbsp;</span><span class="actAsPara" id="u7694-7"><span id="u7694-5">For:</span> Men &amp; Women</span><span class="actAsPara" id="u7694-8">&nbsp;</span><span class="actAsPara" id="u7694-10">Jack Files</span><span class="actAsPara" id="u7694-11">&nbsp;</span><span class="actAsPara" id="u7694-13">Wednesday at 6:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7695"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7696" data-muse-uid="U7696" data-muse-type="img_frame"><!-- image --><img id="u7696_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u7698"><!-- custom html -->
+      
+<div class="panel hflip"></div>
+
+                
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U7733-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back12 clearfix grpelem" id="u7733-5" data-muse-uid="U7733" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7733">​</span><span class="actAsInlineDiv normal_text" id="u7734"><!-- content --><!-- m_editable region-id="editable-static-tag-U7735-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7735-15" data-muse-uid="U7735" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7735">&nbsp;</span><span class="actAsPara" id="u7735-2">&nbsp;</span><span class="actAsPara" id="u7735-3">&nbsp;</span><span class="actAsPara" id="u7735-4">&nbsp;</span><span class="actAsPara" id="u7735-6">Each sunrise seems to bring fresh reasons for fear. They're talking layoffs at work, slowdowns in the economy, flare-ups in the Middle East, turnovers at headquarters, downturns in the housing market, upswings in global warming. The plague of our day, terrorism, begins with the word terror. Fear, it seems, has taken up</span><span class="actAsPara" id="u7735-7">&nbsp;</span><span class="actAsPara" id="u7735-8">&nbsp;</span><span class="actAsPara" id="u7735-10">Childcare provided for children 10 and under for $2 per child</span><span class="actAsPara" id="u7735-11">&nbsp;</span><span class="actAsPara" id="u7735-13">Bethel Fellowship Hall</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u7742"><!-- custom html -->
+      
+<div class="panel vflip"></div>
+
+                
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U7736-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front12 clearfix grpelem" id="u7736-6" data-muse-uid="U7736" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u7736">​</span><span class="actAsInlineDiv normal_text" id="u7737"><!-- content --><!-- m_editable region-id="editable-static-tag-U7738-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u7738-18" data-muse-uid="U7738" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u7738-2">Mom's Connection</span><span class="actAsPara" id="u7738-4">Fearless</span><span class="actAsPara" id="u7738-5">&nbsp;</span><span class="actAsPara" id="u7738-8"><span id="u7738-6">For:</span> Women</span><span class="actAsPara" id="u7738-9">&nbsp;</span><span class="actAsPara" id="u7738-11">Cassie Andrews</span><span class="actAsPara" id="u7738-13">and Mom's Connection Team</span><span class="actAsPara" id="u7738-14">&nbsp;</span><span class="actAsPara" id="u7738-16">Fridays at 9:30 am</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u7739"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u7740" data-muse-uid="U7740" data-muse-type="img_frame"><!-- image --><img id="u7740_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+    </div>
+    <div class="clearfix colelem" id="ppu20438-5"><!-- group -->
+     <div class="clearfix grpelem" id="pu20438-5"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U20438-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back17 clearfix grpelem" id="u20438-5" data-muse-uid="U20438" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u20438">​</span><span class="actAsInlineDiv normal_text" id="u20439"><!-- content --><!-- m_editable region-id="editable-static-tag-U20440-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u20440-16" data-muse-uid="U20440" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u20440">&nbsp;</span><span class="actAsPara" id="u20440-2">&nbsp;</span><span class="actAsPara" id="u20440-3">&nbsp;</span><span class="actAsPara" id="u20440-4">&nbsp;</span><span class="actAsPara" id="u20440-5">&nbsp;</span><span class="actAsPara" id="u20440-6">&nbsp;</span><span class="actAsPara" id="u20440-7">&nbsp;</span><span class="actAsPara" id="u20440-9">Dissecting Pastor's message from the previous Sunday and perhaps allowing God to reveal a deeper truth to you.</span><span class="actAsPara" id="u20440-10">&nbsp;</span><span class="actAsPara" id="u20440-11">&nbsp;</span><span class="actAsPara" id="u20440-13">3110 Via Luiseno</span><span class="actAsPara" id="u20440-14">&nbsp;</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U20441-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front17 clearfix grpelem" id="u20441-6" data-muse-uid="U20441" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u20441">​</span><span class="actAsInlineDiv normal_text" id="u20445"><!-- content --><!-- m_editable region-id="editable-static-tag-U20446-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u20446-14" data-muse-uid="U20446" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u20446-2">Sermon Based</span><span class="actAsPara" id="u20446-3">&nbsp;</span><span class="actAsPara" id="u20446-6"><span id="u20446-4">For:</span> Men &amp;&nbsp; Women</span><span class="actAsPara" id="u20446-7">&nbsp;</span><span class="actAsPara" id="u20446-9">Michael &amp; Jaime Petruccelli</span><span class="actAsPara" id="u20446-10">&nbsp;</span><span class="actAsPara" id="u20446-12">Wednesdays at 7:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u20442"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u20443" data-muse-uid="U20443" data-muse-type="img_frame"><!-- image --><img id="u20443_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+      <div class="size_fixed grpelem" id="u20447"><!-- custom html -->
+       
+<div class="panel hoflip"></div>
+
+                
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="pu24954-5"><!-- group -->
+      <!-- m_editable region-id="editable-static-tag-U24954-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="back19 clearfix grpelem" id="u24954-5" data-muse-uid="U24954" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u24954">​</span><span class="actAsInlineDiv normal_text" id="u24955"><!-- content --><!-- m_editable region-id="editable-static-tag-U24956-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u24956-18" data-muse-uid="U24956" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u24956">&nbsp;</span><span class="actAsPara" id="u24956-2">&nbsp;</span><span class="actAsPara" id="u24956-3">&nbsp;</span><span class="actAsPara" id="u24956-4">&nbsp;</span><span class="actAsPara" id="u24956-5">&nbsp;</span><span class="actAsPara" id="u24956-6">&nbsp;</span><span class="actAsPara" id="u24956-8">An in depth study of the early church, how it began, and then quickly spread throughout the world.</span><span class="actAsPara" id="u24956-9">&nbsp;</span><span class="actAsPara" id="u24956-10">&nbsp;</span><span class="actAsPara" id="u24956-11">&nbsp;</span><span class="actAsPara" id="u24956-13">Bethel</span><span class="actAsPara" id="u24956-15">Classroom B (Upstairs)</span><span class="actAsPara" id="u24956-16">&nbsp;</span></span><!-- /m_editable --></span></p>
+      </div>
+      <!-- /m_editable -->
+      <!-- m_editable region-id="editable-static-tag-U24957-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+      <div class="front19 clearfix grpelem" id="u24957-6" data-muse-uid="U24957" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+       <p><span id="u24957">​</span><span class="actAsInlineDiv normal_text" id="u24958"><!-- content --><!-- m_editable region-id="editable-static-tag-U24959-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u24959-16" data-muse-uid="U24959" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u24959-2">Church History &amp;</span><span class="actAsPara" id="u24959-4">How the Gospel Spread</span><span class="actAsPara" id="u24959-5">&nbsp;</span><span class="actAsPara" id="u24959-8"><span id="u24959-6">For:</span> Men &amp; Women</span><span class="actAsPara" id="u24959-9">&nbsp;</span><span class="actAsPara" id="u24959-11">Fred Pfeiffer</span><span class="actAsPara" id="u24959-12">&nbsp;</span><span class="actAsPara" id="u24959-14">Sundays at 9:00am</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u24960"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u24961" data-muse-uid="U24961" data-muse-type="img_frame"><!-- image --><img id="u24961_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+       <p>&nbsp;</p>
+      </div>
+      <!-- /m_editable -->
+      <div class="size_fixed grpelem" id="u24963"><!-- custom html -->
+       
+<div class="panel hoflip"></div>
+
+                
+      </div>
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U20471-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back14 clearfix grpelem" id="u20471-5" data-muse-uid="U20471" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u20471">​</span><span class="actAsInlineDiv normal_text" id="u20472"><!-- content --><!-- m_editable region-id="editable-static-tag-U20473-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u20473-15" data-muse-uid="U20473" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u20473">&nbsp;</span><span class="actAsPara" id="u20473-2">&nbsp;</span><span class="actAsPara" id="u20473-3">&nbsp;</span><span class="actAsPara" id="u20473-4">&nbsp;</span><span class="actAsPara" id="u20473-5">&nbsp;</span><span class="actAsPara" id="u20473-6">&nbsp;</span><span class="actAsPara" id="u20473-8">By examining the toxins that assault us daily, this study offers the ultimate spiritual intervention with ways to remain clean, pure, and focused on the standard of God's holiness.</span><span class="actAsPara" id="u20473-9">&nbsp;</span><span class="actAsPara" id="u20473-10">&nbsp;</span><span class="actAsPara" id="u20473-12">2145 BOULDERS RD. ALPINE</span><span class="actAsPara" id="u20473-13">&nbsp;</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U20474-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front14 clearfix grpelem" id="u20474-6" data-muse-uid="U20474" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u20474">​</span><span class="actAsInlineDiv normal_text" id="u20478"><!-- content --><!-- m_editable region-id="editable-static-tag-U20479-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u20479-14" data-muse-uid="U20479" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u20479-2">Soul Detox</span><span class="actAsPara" id="u20479-3">&nbsp;</span><span class="actAsPara" id="u20479-6"><span id="u20479-4">For:</span> Men &amp; Women</span><span class="actAsPara" id="u20479-7">&nbsp;</span><span class="actAsPara" id="u20479-9">Shaela &amp; Steve Opgenorth</span><span class="actAsPara" id="u20479-10">&nbsp;</span><span class="actAsPara" id="u20479-12">Wednesdays at 7:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u20475"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u20476" data-muse-uid="U20476" data-muse-type="img_frame"><!-- image --><img id="u20476_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u20480"><!-- custom html -->
+      
+<div class="panel hoflip"></div>
+
+                
+     </div>
+     <!-- m_editable region-id="editable-static-tag-U24355-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="back18 clearfix grpelem" id="u24355-5" data-muse-uid="U24355" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u24355">​</span><span class="actAsInlineDiv normal_text" id="u24356"><!-- content --><!-- m_editable region-id="editable-static-tag-U24357-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u24357-17" data-muse-uid="U24357" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u24357">&nbsp;</span><span class="actAsPara" id="u24357-2">&nbsp;</span><span class="actAsPara" id="u24357-3">&nbsp;</span><span class="actAsPara" id="u24357-4">&nbsp;</span><span class="actAsPara" id="u24357-5">&nbsp;</span><span class="actAsPara" id="u24357-6">&nbsp;</span><span class="actAsPara" id="u24357-7">&nbsp;</span><span class="actAsPara" id="u24357-9">Dissecting Pastor Greg's message and perhaps allowing God to reveal a deeper truth to you.</span><span class="actAsPara" id="u24357-10">&nbsp;</span><span class="actAsPara" id="u24357-11">&nbsp;</span><span class="actAsPara" id="u24357-12">&nbsp;</span><span class="actAsPara" id="u24357-14">2772 Via Dieguenos</span><span class="actAsPara" id="u24357-15">&nbsp;</span></span><!-- /m_editable --></span></p>
+     </div>
+     <!-- /m_editable -->
+     <!-- m_editable region-id="editable-static-tag-U24358-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" -->
+     <div class="front18 clearfix grpelem" id="u24358-6" data-muse-uid="U24358" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p><span id="u24358">​</span><span class="actAsInlineDiv normal_text" id="u24359"><!-- content --><!-- m_editable region-id="editable-static-tag-U24360-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,txtStyleTarget" --><span class="actAsDiv clearfix excludeFromNormalFlow" id="u24360-14" data-muse-uid="U24360" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><span class="actAsPara" id="u24360-2">Sermon Based</span><span class="actAsPara" id="u24360-3">&nbsp;</span><span class="actAsPara" id="u24360-6"><span id="u24360-4">For:</span> Men &amp; Women</span><span class="actAsPara" id="u24360-7">&nbsp;</span><span class="actAsPara" id="u24360-9">Drew &amp; Ashlee Rodgers</span><span class="actAsPara" id="u24360-10">&nbsp;</span><span class="actAsPara" id="u24360-12">Saturday at 7:00pm</span></span><!-- /m_editable --></span><span class="actAsInlineDiv normal_text" id="u24361"><!-- content --><span class="actAsDiv clip_frame excludeFromNormalFlow" id="u24362" data-muse-uid="U24362" data-muse-type="img_frame"><!-- image --><img id="u24362_img" src="images/16909.png?crc=87668415" alt="" width="105" height="105" data-muse-src="images/16909.png?crc=87668415"/></span></span><span></span></p>
+      <p>&nbsp;</p>
+     </div>
+     <!-- /m_editable -->
+     <div class="size_fixed grpelem" id="u24364"><!-- custom html -->
+      
+<div class="panel hoflip"></div>
+
+                
+     </div>
+    </div>
+    <!-- m_editable region-id="editable-static-tag-U7778" template="life-groups.html" data-type="html" data-ice-options="clickable" data-ice-editable="link" -->
+    <div class="pointer_cursor clearfix colelem" id="u7778" data-muse-uid="U7778"><!-- group -->
+     <a class="block" href="life-group-sign-up.html" data-href="page:U7585"><!-- Block link tag --></a>
+     <!-- m_editable region-id="editable-static-tag-U7779-BP_infinity" template="life-groups.html" data-type="html" data-ice-options="disableImageResize,link,clickable,txtStyleTarget" data-ice-editable="link" -->
+     <a class="nonblock nontext clearfix grpelem" id="u7779-5" href="life-group-sign-up.html" data-href="page:U7585" data-muse-uid="U7779" data-muse-type="txt_frame" data-IBE-flags="txtStyleSrc"><!-- content --><p><span id="u7779">Click Here</span> to sign up for a Life Group</p></a>
+     <!-- /m_editable -->
+    </div>
+    <!-- /m_editable -->
+   </div>
+   <div class="verticalspacer" data-offset-top="1840" data-content-above-spacer="1840" data-content-below-spacer="287"></div>
+   <div class="clearfix grpelem" id="pu6196"><!-- column -->
+    <div class="browser_width colelem" id="u6196-bw">
+     <div id="u6196"><!-- group -->
+      <div class="clearfix" id="u6196_align_to_page">
+       <div class="clearfix grpelem" id="pu6203-4"><!-- column -->
+        <div class="clearfix colelem" id="u6203-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Service Times</p>
+        </div>
+        <div class="clearfix colelem" id="u6204-15" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p><span id="u6204">Saturday Night: </span><span id="u6204-2">5:30pm</span></p>
+         <p>&nbsp;</p>
+         <p><span id="u6204-5">Sunday Morning:</span> 9:00am and 10:30am</p>
+         <p>&nbsp;</p>
+         <p><span id="u6204-9">Youth Service:</span> Wednesday, 6:45pm</p>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="pu6197-4"><!-- column -->
+        <div class="clearfix colelem" id="u6197-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Contact us</p>
+        </div>
+        <div class="clearfix colelem" id="u6202-14" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u6202-2">Phone: (619) 445-5508</p>
+         <p id="u6202-4">Fax: (619) 445-5916</p>
+         <p id="u6202-6">Email: office@alpinebethel.org</p>
+         <p id="u6202-8">Hours: Mon-Fri 9am-5pm</p>
+         <p id="u6202-9">&nbsp;</p>
+         <p id="u6202-12"><a class="nonblock" href="contact.html" data-href="page:U1334">Find us</a></p>
+        </div>
+        <div class="clearfix colelem" id="pu6198"><!-- group -->
+         <a class="nonblock nontext grpelem" id="u6198" href="https://www.facebook.com/AlpineBethel?fref=ts"><!-- simple frame --></a>
+         <a class="nonblock nontext grpelem" id="u6199" href="https://twitter.com/thebishopg?lang=en"><!-- simple frame --></a>
+         <a class="nonblock nontext grpelem" id="u6201" href="https://instagram.com/thebishopg/"><!-- simple frame --></a>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="pu6205-4"><!-- column -->
+        <div class="clearfix colelem" id="u6205-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Podcasts</p>
+        </div>
+        <a class="nonblock nontext clearfix colelem" id="u8354-4" href="i-will-praise-his-name---presence.html" data-href="page:U8165" data-IBE-flags="txtStyleSrc"><!-- content --><p><span id="u8354">I Will Praise His Name- Presence</span></p></a>
+        <div class="clearfix colelem" id="u6207-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Sunday, February 5, 2018</p>
+        </div>
+        <a class="nonblock nontext clearfix colelem" id="u8355-4" href="iwphn--compassion.html" data-href="page:U8276" data-IBE-flags="txtStyleSrc"><!-- content --><p><span id="u8355">I Will Praise His Name- Compassion</span></p></a>
+        <div class="clearfix colelem" id="u6209-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Sunday, January 28, 2018</p>
+        </div>
+        <a class="nonblock nontext clearfix colelem" id="u8356-4" href="i-will-praise-his-name.html" data-href="page:U8324" data-IBE-flags="txtStyleSrc"><!-- content --><p><span id="u8356">I Will Praise His Name</span></p></a>
+        <div class="clearfix colelem" id="u6211-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Sunday, January 7, 2018</p>
+        </div>
+       </div>
+       <div class="clearfix grpelem" id="pu6279-4"><!-- column -->
+        <div class="clearfix colelem" id="u6279-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p>Prayer Requests</p>
+        </div>
+        <div class="clearfix colelem" id="u19469-8" data-IBE-flags="txtStyleSrc"><!-- content -->
+         <p id="u19469-2">Please send prayer requests to</p>
+         <p id="u19469-3">&nbsp;</p>
+         <p id="u19469-6"><a class="nonblock" href="mailto:prayer@alpinebethel.org">prayer@alpinebethel.org</a></p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu3932-4"><!-- group -->
+     <div class="footer1 clearfix grpelem" id="u3932-4" data-IBE-flags="txtStyleSrc"><!-- content -->
+      <p>Copyright © Bethel Christian Assembly 2015. All rights reserved.</p>
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u3935-4" href="index.html" data-href="page:U65"><!-- content --><p>Home</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u3936-4" href="about.html" data-href="page:U1128"><!-- content --><p>About</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u3937-4" href="ministries.html" data-href="page:U922"><!-- content --><p>Ministries</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u3938-4" href="events.html" data-href="page:U716"><!-- content --><p>Events</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u3939-4" href="giving.html" data-href="page:U6142"><!-- content --><p>Giving</p></a>
+     <a class="nonblock nontext clearfix grpelem" id="u6184-4" href="contact.html" data-href="page:U1334"><!-- content --><p>Contact</p></a>
+    </div>
+   </div>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn2.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","jquery.musepolyfill.bgsize"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(false);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=310584261" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front2").detach().appendTo('#u7627 .panel');
+					$(".back2").detach().appendTo('#u7627 .panel');
+					
+					var width = $('.front2').width();
+					var height = $('.front2').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7627').css({"width":width,"height":height});
+					
+					$('#u7627 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front4").detach().appendTo('#u7673 .panel');
+					$(".back4").detach().appendTo('#u7673 .panel');
+					
+					var width = $('.front4').width();
+					var height = $('.front4').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7673').css({"width":width,"height":height});
+					
+					$('#u7673 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front1").detach().appendTo('#u7616 .panel');
+					$(".back1").detach().appendTo('#u7616 .panel');
+					
+					var width = $('.front1').width();
+					var height = $('.front1').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7616').css({"width":width,"height":height});
+					
+					$('#u7616 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front3").detach().appendTo('#u7639 .panel');
+					$(".back3").detach().appendTo('#u7639 .panel');
+					
+					var width = $('.front3').width();
+					var height = $('.front3').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7639').css({"width":width,"height":height});
+					
+					$('#u7639 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front10").detach().appendTo('#u7720 .panel');
+					$(".back10").detach().appendTo('#u7720 .panel');
+					
+					var width = $('.front10').width();
+					var height = $('.front10').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7720').css({"width":width,"height":height});
+					
+					$('#u7720 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front8").detach().appendTo('#u7709 .panel');
+					$(".back8").detach().appendTo('#u7709 .panel');
+					
+					var width = $('.front8').width();
+					var height = $('.front8').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7709').css({"width":width,"height":height});
+					
+					$('#u7709 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front7").detach().appendTo('#u7698 .panel');
+					$(".back7").detach().appendTo('#u7698 .panel');
+					
+					var width = $('.front7').width();
+					var height = $('.front7').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7698').css({"width":width,"height":height});
+					
+					$('#u7698 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front12").detach().appendTo('#u7742 .panel');
+					$(".back12").detach().appendTo('#u7742 .panel');
+					
+					var width = $('.front12').width();
+					var height = $('.front12').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u7742').css({"width":width,"height":height});
+					
+					$('#u7742 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front17").detach().appendTo('#u20447 .panel');
+					$(".back17").detach().appendTo('#u20447 .panel');
+					
+					var width = $('.front17').width();
+					var height = $('.front17').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u20447').css({"width":width,"height":height});
+					
+					$('#u20447 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front19").detach().appendTo('#u24963 .panel');
+					$(".back19").detach().appendTo('#u24963 .panel');
+					
+					var width = $('.front19').width();
+					var height = $('.front19').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u24963').css({"width":width,"height":height});
+					
+					$('#u24963 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front14").detach().appendTo('#u20480 .panel');
+					$(".back14").detach().appendTo('#u20480 .panel');
+					
+					var width = $('.front14').width();
+					var height = $('.front14').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u20480').css({"width":width,"height":height});
+					
+					$('#u20480 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+	
+		<script type="text/javascript">
+			
+			$(function() {
+					
+					$(".front18").detach().appendTo('#u24364 .panel');
+					$(".back18").detach().appendTo('#u24364 .panel');
+					
+					var width = $('.front18').width();
+					var height = $('.front18').outerHeight();
+					
+					//alert("w:"+width+" "+"h:"+height);
+					//$('#u24364').css({"width":width,"height":height});
+					
+					$('#u24364 .panel').css({"width":width,"height":height});
+					 
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+		
+				// set up hover panels
+				// although this can be done without JavaScript, we've attached these events
+				// because it causes the hover to be triggered when the element is tapped on a touch device
+				$('.panel').hover(function(){
+					$(this).addClass('flip');
+				},function(){
+					$(this).removeClass('flip');
+				});
+		
+				
+			});
+		</script>
+	
+
+	
+   </body>
+</html>
